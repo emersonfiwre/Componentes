@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Toast Me" />
+
+        <Button
+            android:id="@+id/button_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Snack Me" />
+
+        <Spinner
+            android:id="@+id/spinner_static"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/spinner_values" />
+
+        <Spinner
+            android:id="@+id/spinner_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!--Botões obter e atribuir spinner-->
+        <LinearLayout
+            android:id="@+id/linear_button_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_get_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Obter spinner" />
+
+            <Button
+                android:id="@+id/button_set_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Atribuir spinner" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:max="50" />
+
+        <TextView
+            android:id="@+id/text_seekbar_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Valor seekbar: 0" />
+
+        <!--Botões obter e atribuir seekbar-->
+        <LinearLayout
+            android:id="@+id/linear_button_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textSeekValue">
+
+            <Button
+                android:id="@+id/button_get_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Obter seekbar" />
+
+            <Button
+                android:id="@+id/button_set_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Atribuir seekbar" />
+
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/check_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="On / Off" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio on" />
+
+            <RadioButton
+                android:id="@+id/radio_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio off" />
+        </RadioGroup>
+        
+    </LinearLayout>
+</ScrollView>
